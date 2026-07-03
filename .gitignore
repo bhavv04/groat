@@ -1,0 +1,26 @@
+# Rust
+target/
+Cargo.lock
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Groat runtime files
+*.db
+*.db-shm
+*.db-wal
+groat.toml
+
+# Dashboard build (if you add one later)
+dashboard/dist/
+
+# Env / secrets
+.env
+.env.*
