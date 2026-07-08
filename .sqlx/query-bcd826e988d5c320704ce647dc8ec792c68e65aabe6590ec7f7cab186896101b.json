@@ -1,0 +1,38 @@
+{
+  "db_name": "SQLite",
+  "query": "\n            SELECT\n                COUNT(*)            as total_requests,\n                SUM(total_tokens)   as total_tokens,\n                SUM(cost_usd)       as total_cost_usd,\n                SUM(cache_hit)      as cache_hits\n            FROM requests\n            ",
+  "describe": {
+    "columns": [
+      {
+        "name": "total_requests",
+        "ordinal": 0,
+        "type_info": "Int"
+      },
+      {
+        "name": "total_tokens",
+        "ordinal": 1,
+        "type_info": "Int64"
+      },
+      {
+        "name": "total_cost_usd",
+        "ordinal": 2,
+        "type_info": "Float"
+      },
+      {
+        "name": "cache_hits",
+        "ordinal": 3,
+        "type_info": "Int64"
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  "hash": "bcd826e988d5c320704ce647dc8ec792c68e65aabe6590ec7f7cab186896101b"
+}

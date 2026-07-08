@@ -1,0 +1,26 @@
+{
+  "db_name": "SQLite",
+  "query": "\n            SELECT model, SUM(cost_usd) as total\n            FROM requests\n            GROUP BY model\n            ORDER BY total DESC\n            ",
+  "describe": {
+    "columns": [
+      {
+        "name": "model",
+        "ordinal": 0,
+        "type_info": "Text"
+      },
+      {
+        "name": "total",
+        "ordinal": 1,
+        "type_info": "Float"
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false,
+      false
+    ]
+  },
+  "hash": "b71028979bfd85df98454af1106097cf7976677500e42b8cf54977f17de660f0"
+}

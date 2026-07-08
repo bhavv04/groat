@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "\n            INSERT INTO requests (\n                id, created_at, model, provider,\n                prompt_tokens, completion_tokens, total_tokens,\n                cost_usd, latency_ms,\n                cache_hit, cache_similarity,\n                routed_model, routing_reason,\n                conversation_id, parent_request_id, graph_depth,\n                system_prompt_hash, prompt_cache_hit\n            ) VALUES (\n                ?, ?, ?, ?,\n                ?, ?, ?,\n                ?, ?,\n                ?, ?,\n                ?, ?,\n                ?, ?, ?,\n                ?, ?\n            )\n            ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 18
+    },
+    "nullable": []
+  },
+  "hash": "cac4aa3e87acdbdb0f185206daf9195741547e8a616a5d8090a52dc43ec6279b"
+}
