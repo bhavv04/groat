@@ -1,7 +1,7 @@
 // app/docs/page.tsx
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { Nav } from "@/components/nav/Nav";
+import { Nav } from "@/components/nav/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { Button } from "@/components/ui/Button";
 

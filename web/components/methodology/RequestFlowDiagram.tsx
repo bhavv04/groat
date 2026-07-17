@@ -51,7 +51,7 @@ export function RequestFlowDiagram() {
 
         {/* cache hit shortcut */}
         <path d="M430,87 C430,32 105,32 105,136" stroke="var(--color-verdigris)" fill="none" markerEnd="url(#arrow-verdigris)" />
-        <text x="267" y="47" textAnchor="middle" fontFamily="var(--font-sans)" fontSize="10" fill="var(--color-verdigris)">cache hit → instant, $0, provider never called</text>
+        <text x="290" y="40" textAnchor="middle" fontFamily="var(--font-sans)" fontSize="12" fill="var(--color-verdigris)">cache hit → instant, $0, provider never called</text>
       </svg>
     </div>
   );
