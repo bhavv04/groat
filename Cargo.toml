@@ -28,3 +28,5 @@ codegen-units = 1
 strip = true
 
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+chrono = { version = "0.4", features = ["serde"] }
