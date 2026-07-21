@@ -92,7 +92,7 @@ async fn chat_handler(
             provider: "ollama".to_string(),
             prompt_tokens,
             completion_tokens,
-            cost_usd: 0.0, // ollama is free — will be non-zero for OpenAI/Anthropic
+            cost_usd: groat_core::calculate_cost(&request.model, prompt_tokens as u32, completion_tokens as u32),
             latency_ms,
             cache_hit: false,
             cache_similarity: None,
