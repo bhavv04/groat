@@ -4,6 +4,7 @@ members = [
     "crates/groat-core",
     "crates/groat-providers",
     "crates/groat-storage",
+    "crates/groat-embed",
 ]
 resolver = "2"
 
